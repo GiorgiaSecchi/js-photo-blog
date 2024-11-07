@@ -6,13 +6,17 @@ h1 {
   font-size: 4rem;
   font-weight: bolder;
   font-style: italic;
-  font-family: cursive;
 }
 
 body {
   background-image: url(../img/cork.png);
+  font-family: cursive;
 }
 
 .card {
   border-radius: 0;
+}
+
+.card-text {
+  font-style: italic;
 }
