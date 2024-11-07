@@ -20,7 +20,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
               <img
                 src="${photo.url}"
                 class="card-img-top p-3"
-                alt="Foto 1"
+                alt="Photo: ${photo.id}"
               />
               <div class="card-body pt-0">
                 <p class="card-text text-start text-capitalize">

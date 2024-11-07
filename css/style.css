@@ -1,15 +1,17 @@
 header {
   background-image: url(../img/wall.png);
+  background-size: contain;
 }
 
 h1 {
-  font-size: 4rem;
-  font-weight: bolder;
+  /* font-size: 4rem; */
+  /* font-weight: bolder; */
   font-style: italic;
 }
 
 body {
   background-image: url(../img/cork.png);
+  background-size: contain;
   font-family: cursive;
 }
 
