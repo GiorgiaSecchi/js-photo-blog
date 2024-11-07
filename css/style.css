@@ -7,12 +7,13 @@ body {
 header {
   background-image: url(../img/wall.png);
   background-size: contain;
+
+  margin-bottom: 5rem;
 }
 
-h1 {
+.display-1 {
+  font-weight: 800;
   /* font-size: 4rem; */
-  /* font-weight: bolder; */
-  font-style: italic;
 }
 
 .card {
@@ -21,4 +22,59 @@ h1 {
 
 .card-text {
   font-style: italic;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 350px;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+  }
+
+  /* .display-1 {
+    font-size: 3rem;
+  } */
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 450px;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
 }
