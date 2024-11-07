@@ -10,21 +10,21 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
     photos.forEach((photo) => {
       photosRow.innerHTML += `
-       <div class="col">
-            <div class="card position-relative">
+       <div class="col px-4">
+            <div id="${photo.id}" class="card position-relative h-100">
               <img
                 src="./img/pin.svg"
                 alt="Pin"
                 class="pin-svg position-absolute top-0 start-50 translate-middle"
               />
               <img
-                src="./img/6409f98830205.jpg"
+                src="${photo.url}"
                 class="card-img-top p-3"
                 alt="Foto 1"
               />
               <div class="card-body pt-0">
-                <p class="card-text text-start">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <p class="card-text text-start text-capitalize">
+                  ${photo.title}
                 </p>
               </div>
             </div>
