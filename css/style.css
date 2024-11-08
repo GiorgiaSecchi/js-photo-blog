@@ -7,12 +7,18 @@ body {
 header {
   background-image: url(../img/wall.png);
   background-size: contain;
+  filter: brightness(110%);
 
   margin-bottom: 5rem;
+
+  box-shadow: 5px 8px 20px 0px #814f1c;
 }
 
 .display-1 {
   font-weight: 800;
+  color: #343a40;
+  /* color: #a43f33; */
+  /* text-shadow: 2px 2px 4px #9d9d9d; */
   /* font-size: 4rem; */
 }
 
@@ -33,6 +39,7 @@ header {
 
 .card:hover {
   transform-origin: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   z-index: 10;
   transform: rotate(10deg);
   scale: 115%;
@@ -84,6 +91,10 @@ header {
     max-width: 75%;
   }
 
+  .card:hover {
+    scale: 105%;
+  }
+
   /* .display-1 {
     font-size: 3rem;
   } */
@@ -102,6 +113,10 @@ header {
   .img-overlay {
     max-width: 75%;
   }
+
+  .card:hover {
+    scale: 108%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -113,6 +128,10 @@ header {
 
   .img-overlay {
     max-width: 85%;
+  }
+
+  .card:hover {
+    scale: 115%;
   }
 }
 
