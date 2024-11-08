@@ -32,6 +32,11 @@ header {
 
 .card:hover {
   transform: rotate(10deg);
+  scale: 115%;
+}
+
+.card:hover .pin-svg {
+  display: none;
 }
 
 /** LAYOVER */
