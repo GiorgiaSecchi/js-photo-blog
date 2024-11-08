@@ -6,12 +6,16 @@ console.log(photosRow);
 const overlayEl = document.getElementById("overlay");
 console.log(overlayEl);
 
-//# CHIAMATA
+const buttonClose = document.getElementById("btn-close");
+console.log(buttonClose);
+
+//# CHIAMATA API
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
   .then((res) => res.json())
   .then((photos) => {
     console.log(photos);
 
+    //* Genero le 6 foto con i dati della chiamata
     photos.forEach((photo) => {
       photosRow.innerHTML += `
        <div class="col px-4">
@@ -35,12 +39,18 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
           </div> `;
     });
 
+    //* Al click immagine rimozione d-none (compare ovelay)
     const photoImageEL = document.querySelectorAll(".card-img-top");
     console.log(photoImageEL);
 
     photoImageEL.forEach((image) => {
-      image.addEventListener("click", () => {
-        overlayEl.classList.remove("d-none");
-      });
+      image.addEventListener("click", () =>
+        overlayEl.classList.remove("d-none")
+      );
     });
+
+    //* Bottone che riaggiunge d-none (scompare overlay)
+    buttonClose.addEventListener("click", () =>
+      overlayEl.classList.add("d-none")
+    );
   });
