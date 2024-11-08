@@ -67,4 +67,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     buttonCloseEl.addEventListener("click", () =>
       overlayEl.classList.add("d-none")
     );
+  })
+  .catch((error) => {
+    console.error("Errore nella richiesta GET:", error);
   });
