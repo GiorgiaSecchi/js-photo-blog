@@ -11,7 +11,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     photos.forEach((photo) => {
       photosRow.innerHTML += `
        <div class="col px-4">
-            <div id="${photo.id}" class="card position-relative h-100">
+            <div id="${photo.id}" class="card position-relative h-100 shadow">
               <img
                 src="./img/pin.svg"
                 alt="Pin"
