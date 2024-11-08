@@ -23,7 +23,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     photos.forEach((photo) => {
       photosRowEl.innerHTML += `
        <div class="col px-4">
-            <div class="card position-relative h-100 shadow">
+            <div class="card position-relative h-100 ">
               <img
                 src="./img/pin.svg"
                 alt="Pin"
