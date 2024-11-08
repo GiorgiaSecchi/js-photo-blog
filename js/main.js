@@ -34,4 +34,13 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
             </div>
           </div> `;
     });
+
+    const photoImageEL = document.querySelectorAll(".card-img-top");
+    console.log(photoImageEL);
+
+    photoImageEL.forEach((image) => {
+      image.addEventListener("click", () => {
+        overlayEl.classList.remove("d-none");
+      });
+    });
   });
