@@ -3,6 +3,10 @@
 const photosRow = document.getElementById("photos-row");
 console.log(photosRow);
 
+const overlayEl = document.getElementById("overlay");
+console.log(overlayEl);
+
+//# CHIAMATA
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
   .then((res) => res.json())
   .then((photos) => {
