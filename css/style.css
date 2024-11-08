@@ -32,6 +32,8 @@ header {
 }
 
 .card:hover {
+  transform-origin: center;
+  z-index: 10;
   transform: rotate(10deg);
   scale: 115%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
