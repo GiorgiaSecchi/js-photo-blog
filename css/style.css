@@ -30,6 +30,10 @@ header {
   cursor: pointer;
 }
 
+.card:hover {
+  opacity: 50%;
+}
+
 /** LAYOVER */
 
 #overlay {
