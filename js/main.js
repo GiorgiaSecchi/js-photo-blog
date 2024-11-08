@@ -19,6 +19,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     console.log(photos);
 
     //* Genero le 6 foto con i dati della chiamata
+
     photos.forEach((photo) => {
       photosRowEl.innerHTML += `
        <div class="col px-4">
@@ -43,9 +44,13 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
           </div> `;
     });
 
-    //* Al click immagine rimozione d-none (compare ovelay)
+    //* Raccolgo le immagini delle card in un unica variabile
+
     const imagesCardEl = document.querySelectorAll(".card-img-top");
     console.log(imagesCardEl);
+
+    //* Al click di ogni immagine:
+    //* rimozione d-none (compare overlay) + aggiorno il src di overlay con img cliccata
 
     imagesCardEl.forEach((image) => {
       image.addEventListener("click", () => {
@@ -57,7 +62,8 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
       });
     });
 
-    //* Bottone che riaggiunge d-none (scompare overlay)
+    //* Bottone che al click riaggiunge d-none (scompare overlay)
+
     buttonCloseEl.addEventListener("click", () =>
       overlayEl.classList.add("d-none")
     );
