@@ -50,15 +50,17 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     console.log(imagesCardEl);
 
     //* Al click di ogni immagine:
-    //* rimozione d-none (compare overlay) + aggiorno il src di overlay con img cliccata
+    //* aggiorno il src di overlay con img cliccata + rimozione d-none (compare overlay)
 
     imagesCardEl.forEach((image) => {
       image.addEventListener("click", () => {
-        const photoId = image.getAttribute("data-id");
-        console.log(`ID Immagine: ${photoId}`);
-
         imageOverlayEl.src = image.src;
+        imageOverlayEl.alt = image.alt;
+
         overlayEl.classList.remove("d-none");
+
+        //// const photoId = image.getAttribute("data-id");
+        //// console.log(`ID Immagine: ${photoId}`);
       });
     });
 
