@@ -79,8 +79,7 @@ header {
 /** MEDIA QUERY */
 
 @media (max-width: 576px) {
-  .container,
-  .container-sm {
+  .container {
     max-width: 350px;
   }
 
@@ -99,11 +98,15 @@ header {
   /* .display-1 {
     font-size: 3rem;
   } */
+
+  /* .container,
+  .container-sm {
+    max-width: 350px;
+  } */
 }
 
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
+@media screen and (min-width: 576px) {
+  .container {
     max-width: 450px;
   }
 
@@ -118,12 +121,15 @@ header {
   .card:hover {
     scale: 108%;
   }
+
+  /* .container,
+  .container-sm {
+    max-width: 450px;
+  } */
 }
 
-@media (min-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
+@media screen and (min-width: 768px) {
+  .container {
     max-width: 680px;
   }
 
@@ -134,27 +140,41 @@ header {
   .card:hover {
     scale: 115%;
   }
-}
 
-@media (min-width: 992px) {
-  .container,
-  .container-lg,
+  /* .container,
   .container-md,
   .container-sm {
+    max-width: 680px;
+  } */
+}
+
+@media screen and (min-width: 992px) {
+  .container {
     max-width: 960px;
   }
 
   .img-overlay {
     max-width: 95%;
   }
+
+  /* .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  } */
 }
 
-@media (min-width: 1200px) {
-  .container,
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* .container,
   .container-lg,
   .container-md,
   .container-sm,
   .container-xl {
     max-width: 1140px;
-  }
+  } */
 }
