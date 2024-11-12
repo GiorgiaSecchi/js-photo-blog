@@ -78,7 +78,7 @@ header {
 
 /** MEDIA QUERY */
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .container {
     max-width: 350px;
   }
